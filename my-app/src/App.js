@@ -14,10 +14,18 @@ import NestingComponents from './components/NestingComponents';
 import MethodsAsPropsChild from './components/MethodsAsPropsChild';
 import MethodsAsPropsParent from './components/MethodsAsPropsParent';
 import RenderingList from './components/RenderingList';
+import Clock from './components/Clock';
+import LifeCyclesCDM from './components/LifeCyclesCDM';
+import LifeCyclesCDU from './components/LifeCyclesCDU';
+import LifeCyclesCWU from "./components/LifeCyclesCWU";
 
 function App() {
   return (
     <div className="App">
+      <LifeCyclesCWU />
+      <LifeCyclesCDU />
+      <LifeCyclesCDM />
+      <Clock />
       <RenderingList />
       <MethodsAsPropsChild />
       <MethodsAsPropsParent />
