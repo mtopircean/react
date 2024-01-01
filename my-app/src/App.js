@@ -5,10 +5,26 @@ import FunctionalGreetingWithProps from './components/FunctionalGreetingWithProp
 import StatefullGreeting from './components/StatefullGreeting';
 import StatefullGreetingWithCallback from './components/StatefullGreetingWithCalback';
 import StatefullGreetingWithPrevState from './components/StatefullGreetingWithPrevState';
+import EventsFunctional from './components/EventsFunctional';
+import EventsClass from './components/EventsClass';
+import EventBinding from './components/EventBinding';
+import ConditionalRenderingClass from './components/ConditionalRenderingClass';
+import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
+import NestingComponents from './components/NestingComponents';
+import MethodsAsPropsChild from './components/MethodsAsPropsChild';
+import MethodsAsPropsParent from './components/MethodsAsPropsParent';
 
 function App() {
   return (
     <div className="App">
+      <MethodsAsPropsChild />
+      <MethodsAsPropsParent />
+      <NestingComponents />
+      <ConditionalRenderingClass />
+      <ConditionalRenderingFunctional connected={true}/>
+      <EventBinding />
+      <EventsFunctional />
+      <EventsClass />
       <StatefullGreetingWithPrevState greeting="I`m a statefull class component!" name="I am Loki!"/>
       <StatefullGreetingWithCallback greeting="I`m a statefull class component!" name="I am Loki!"/>
       <StatefullGreeting greeting="I`m a statefull class component!" name="I am Loki!"/>
