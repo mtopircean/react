@@ -13,10 +13,12 @@ import ConditionalRenderingFunctional from './components/ConditionalRenderingFun
 import NestingComponents from './components/NestingComponents';
 import MethodsAsPropsChild from './components/MethodsAsPropsChild';
 import MethodsAsPropsParent from './components/MethodsAsPropsParent';
+import RenderingList from './components/RenderingList';
 
 function App() {
   return (
     <div className="App">
+      <RenderingList />
       <MethodsAsPropsChild />
       <MethodsAsPropsParent />
       <NestingComponents />
