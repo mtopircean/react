@@ -21,10 +21,14 @@ import LifeCyclesCWU from "./components/LifeCyclesCWU";
 import ControlledForm from './components/ControlledForm';
 import UncontrolledForm from './components/UncontrolledForm';
 import { SearchBar } from './components/SearchBar';
+import HooksCounter from './components/HooksCounter';
+import ControlledFormHooks from './components/ControlledFormHooks';
 
 function App() {
   return (
     <div className="App">
+      <ControlledFormHooks />
+      <HooksCounter />
       <SearchBar />
       <UncontrolledForm />
       <ControlledForm />
